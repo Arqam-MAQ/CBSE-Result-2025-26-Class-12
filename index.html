@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE Exam Results Clone</title>
+    <style>
+        /* CSS Reset aur Basic Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Top Header (White section) */
+        header {
+            background-color: #ffffff;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #0056b3;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-container img {
+            width: 50px;
+            height: 50px;
+        }
+        .header-text h1 {
+            font-size: 14px;
+            color: #0056b3;
+            text-transform: uppercase;
+        }
+        .hamburger {
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* Sub Header (Orange section) */
+        .sub-header {
+            background-color: #f6a728;
+            text-align: center;
+            padding: 15px;
+            color: #000;
+        }
+        .sub-header h3 {
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .sub-header h2 {
+            margin: 5px 0;
+            font-size: 20px;
+        }
+        .sub-header p {
+            font-size: 14px;
+        }
+
+        /* Latest News Ticker (Dark Blue) */
+        .latest-news {
+            background-color: #082d6b;
+            color: #fff;
+            padding: 12px 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Dropdown/Accordion Boxes */
+        .accordion {
+            background-color: #fdfdfd;
+            margin: 15px 15px 0 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            color: #555;
+        }
+        .accordion-content {
+            background: #fff;
+            margin: 0 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-top: none;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Results List Section (Light Grey) */
+        .results-section {
+            background-color: #f2f2f2;
+            margin: 15px;
+            padding: 20px 15px;
+            border-radius: 4px;
+        }
+        .results-section h3 {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .results-section ul {
+            padding-left: 20px;
+        }
+        .results-section li {
+            margin-bottom: 15px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* Important Links Section (Dark Blue) */
+        .important-links {
+            background-color: #082d6b;
+            color: #fff;
+            padding: 20px 15px;
+        }
+        .important-links h3 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .important-links ul {
+            list-style: none;
+        }
+        .important-links li {
+            margin-bottom: 12px;
+            font-size: 13px;
+        }
+        .important-links li::before {
+            content: "• ";
+            color: #fff;
+            padding-right: 5px;
+        }
+
+        /* Footer (Black) */
+        .footer-bottom {
+            background-color: #1a1a1a;
+            color: #cccccc;
+            text-align: center;
+            padding: 20px 15px;
+            font-size: 11px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/CBSE_new_logo.svg/1200px-CBSE_new_logo.svg.png" alt="CBSE Logo">
+            <div class="header-text">
+                <h1>Central Board of Secondary Education</h1>
+            </div>
+        </div>
+        <div class="hamburger">☰</div>
+    </header>
+
+    <div class="sub-header">
+        <h3>केन्द्रीय माध्यमिक शिक्षा बोर्ड</h3>
+        <h2>Central Board of Secondary Education</h2>
+        <p>CBSE Exam Results</p>
+    </div>
+
+    <div class="latest-news">
+        <span>LATEST NEWS</span>
+        <span>⏸</span>
+    </div>
+
+    <div class="accordion">Current Events <span>⊟</span></div>
+    <div class="accordion-content">No post to display</div>
+    <div class="accordion">News & Events <span>⊞</span></div>
+
+    <div class="results-section">
+        <h3>2025 Results</h3>
+        <ul>
+            <li>Class X -  Exam Result 2026 </li>
+            <li>Class XII - Exam Result 2026 </li>
+            <li>Secondary School Examination (Supplementary) Class X Results 2025 - Published on 5th August 2025</li>
+            <li>Senior School Certificate Examination (Supplementary) Class XII Results 2025 - Announced on 1st August 2025</li>
+            <li>Class X - After Re-evaluation/Verification ... Lot 1 Result 2025 - Updated till 09th March 2025</li>
+            <li>Class XII - After Re-evaluation/Verification ... Lot 1 Result 2025 - Updated till 09th March 2025</li>
+        </ul>
+    </div>
+
+    <div class="important-links">
+        <h3>📝 Important Links</h3>
+        <ul>
+            <li>Curriculum and Syllabus</li>
+            <li>Vocational Education</li>
+            <li>Examination Related Materials</li>
+            <li>Statistical Information</li>
+            <li>Examination Bye Laws</li>
+        </ul>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Site Policies | Privacy Policy | Hyperlink Policy | Terms and Conditions | Help</p>
+        <p><br>Content Owned and Maintained by Central Board of Secondary Education</p>
+        <p><br>Last Updated: Mar 17, 2026</p>
+    </div>
+
+</body>
+</html>

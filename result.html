@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class XII Examination Results 2026</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            /* Using a cursive font stack to match the screenshot */
+            font-family: 'Segoe Print', 'Comic Sans MS', cursive, sans-serif;
+            color: #333;
+        }
+
+        /* Top Header */
+        .header-top {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+        .header-top img {
+            height: 50px;
+        }
+        .header-top h1 {
+            font-size: 18px;
+            margin: 0;
+            color: #444;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+        }
+
+        /* Cyan Sub Header */
+        .header-cyan {
+            background-color: #00d2d3;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .header-cyan h2 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 1px;
+            font-style: italic;
+        }
+        .header-cyan p {
+            margin: 5px 20px 0 0;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        /* Form Container */
+        .container {
+            max-width: 420px;
+            background: white;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* Form Elements */
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .blue-text {
+            color: #007bff;
+            font-size: 11px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: 'Segoe Print', 'Comic Sans MS', cursive;
+            color: #777;
+            font-style: italic;
+        }
+
+        /* Captcha Section */
+        .captcha-group {
+            margin-bottom: 20px;
+        }
+        .captcha-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        .captcha-box {
+            background: #000080;
+            color: white;
+            padding: 5px 15px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        .refresh-icon {
+            font-size: 24px;
+            cursor: pointer;
+            color: #5ebd3e;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        /* Buttons */
+        .btn-group {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 25px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Segoe Print', 'Comic Sans MS', cursive;
+            font-size: 14px;
+        }
+        .btn-submit { background-color: #007bff; }
+        .btn-reset { background-color: #dc3545; }
+
+        /* Disclaimer */
+        .disclaimer {
+            font-size: 12px;
+            text-align: center;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-top">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/CBSE_new_logo.svg/1200px-CBSE_new_logo.svg.png" alt="CBSE Logo">
+        <div>
+            <h1>केन्द्रीय माध्यमिक शिक्षा बोर्ड<br>Central Board of Secondary Education</h1>
+        </div>
+    </div>
+
+    <div class="header-cyan">
+        <h2>https://cbseresults.nic.in</h2>
+        <p>Examination Results 2026</p>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            Senior School Certificate<br>Examination (Class XII)<br>Results 2026
+        </div>
+
+        <div class="form-group">
+            <label>Enter Your Roll Number :</label>
+            <input type="text" placeholder="Roll Number">
+        </div>
+
+        <div class="form-group">
+            <label>Enter School No. :</label>
+            <input type="text" placeholder="School Number">
+        </div>
+
+        <div class="form-group">
+            <label>Enter Admit Card ID. : <span class="blue-text">(as given on your admit card)</span></label>
+            <input type="text" placeholder="Admit Card Id">
+        </div>
+
+        <div class="form-group">
+            <label>Enter Security Pin <span class="blue-text">(case sensitive)</span></label>
+            <input type="text" placeholder="Security Pin">
+        </div>
+
+        <div class="captcha-group">
+            <label>Security Pin :</label>
+            <div class="captcha-container">
+                <div class="captcha-box">H3PVNI</div>
+                <div class="refresh-icon">🔄</div>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button type="submit" class="btn-submit">Submit</button>
+            <button type="reset" class="btn-reset">Reset</button>
+        </div>
+
+        <div class="disclaimer">
+            Disclaimer : Neither NIC nor CBSE is responsible for any inadvertent error that may have crept in the results being published on NET. The results published on net are for Immediate information to the examinees. These cannot be treated as original mark sheets. Original mark sheets have been issued by the Board separately.
+        </div>
+    </div>
+
+</body>
+</html>
